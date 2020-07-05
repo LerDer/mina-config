@@ -4,7 +4,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
  * @author lww
- * @date 2020-06-11 16:13
+ * @date 2020-07-05 16:13
  */
 @ConfigurationProperties(prefix = "mina.server")
 public class MinaServerProperty {
