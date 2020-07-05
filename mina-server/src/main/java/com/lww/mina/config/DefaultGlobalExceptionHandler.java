@@ -1,7 +1,7 @@
 package com.lww.mina.config;
 
 import com.alibaba.fastjson.JSON;
-import com.github.lerder.config.result.HttpResult;
+import com.lww.mina.result.HttpResult;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.ConstraintViolationException;
 import org.slf4j.Logger;
