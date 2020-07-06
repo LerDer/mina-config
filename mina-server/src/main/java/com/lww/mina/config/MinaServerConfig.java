@@ -1,6 +1,8 @@
 package com.lww.mina.config;
 
+import com.lww.mina.protocol.MessageProtocolCodecFactory;
 import javax.annotation.Resource;
+import org.apache.mina.filter.codec.ProtocolCodecFilter;
 import org.apache.mina.filter.executor.ExecutorFilter;
 import org.apache.mina.filter.logging.LoggingFilter;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -33,5 +35,13 @@ public class MinaServerConfig {
     @Bean
     public LoggingFilter loggingFilter() {
         return new LoggingFilter();
+    }
+
+    /**
+     * 编解码器filter
+     */
+    @Bean
+    public ProtocolCodecFilter protocolCodecFilter() {
+        return new ProtocolCodecFilter(new MessageProtocolCodecFactory());
     }
 }
