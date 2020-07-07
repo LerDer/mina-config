@@ -1,7 +1,7 @@
 package com.lww.mina.dao;
 
-import com.lww.mina.domain.Message;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.lww.mina.domain.Message;
 
 /**
  * <p>
