@@ -1,4 +1,4 @@
-package com.lww.mina;
+package com.lww.mina.dto;
 
 import java.io.Serializable;
 import java.util.Date;
